@@ -12,6 +12,8 @@
   --second-background-color: #f5f4fa;
   --header-border-color: #ececec;
   --card-border-color: #eeeeee;
+  --clients-border-color: #afb1b8;
+  --clients-svg-color: #afb1b8;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -115,6 +117,7 @@ img {
 .header-contact-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .header-contact-list .header-contact-item:not(:last-child) {
   margin-right: 50px;
@@ -127,7 +130,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -141,7 +144,7 @@ img {
   color: var(--hover-and-focus-color);
 }
 .contact-svg {
-  fill: var(--main-text-color);
+  fill: currentColor;
 
   display: inline-block;
   align-items: center;
@@ -221,6 +224,20 @@ img {
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
+.features-svg {
+  display: inline-block;
+}
+.features-svg-icon {
+  background-color: var(--second-background-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+}
+
 /* -------------Чем мы занимаемся------------- */
 .working {
   padding-top: 0;
@@ -284,6 +301,43 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+/* -------------Клиенты------------- */
+.clients-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--clients-border-color);
+  border-radius: 4px;
+}
+.clients-svg {
+  fill: var(--clients-svg-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--hover-and-focus-color);
+}
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  fill: var(--hover-and-focus-color);
+}
+
 /* -------------Footer------------- */
 .footer {
   background-color: var(--footer-backround-color);
