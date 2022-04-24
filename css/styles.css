@@ -387,7 +387,7 @@ img {
   margin-bottom: 0;
 }
 .footer-contacts {
-  display: block;
+  display: flex;
 }
 .footer-adress {
   font-style: normal;
@@ -414,6 +414,27 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--hover-and-focus-color);
+}
+/*социальные сети футер*/
+
+.footer-soc-section {
+  display: block;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-soc-section-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-white);
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* -------------ПОРТФОЛИО------------- */
